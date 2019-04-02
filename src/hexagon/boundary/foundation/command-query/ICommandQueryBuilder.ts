@@ -4,14 +4,14 @@
 /// <reference path="../authorization/IAuthorizationContext.ts" />
 
 namespace Microservice.Foundation {
-  export interface ICommandQueryBuilder<T, R extends IAuthorizationResource = IAuthorizationResource> {
+  export interface ICommandQueryBuilder<T> {
     reset(): this
 
     build(): T
 
     setAuthorizationSubject(subject: IAuthorizationSubject): this
 
-    setAuthorizationResource(resource: R): this
+    setAuthorizationResource(resource: IAuthorizationResource | IAuthorizationResource[]): this
 
     setAuthorizationAction(action: IAuthorizationAction): this
 

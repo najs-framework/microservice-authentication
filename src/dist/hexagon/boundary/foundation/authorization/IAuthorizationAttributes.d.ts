@@ -3,9 +3,9 @@
 /// <reference path="IAuthorizationAction.d.ts" />
 /// <reference path="IAuthorizationContext.d.ts" />
 declare namespace Microservice.Foundation {
-    interface IAuthorizationAttributes<T extends IAuthorizationResource = IAuthorizationResource> {
+    interface IAuthorizationAttributes {
         getAuthorizationSubject(): IAuthorizationSubject;
-        getAuthorizationResource(): T;
+        getAuthorizationResource(): IAuthorizationResource | IAuthorizationResource[];
         getAuthorizationAction(): IAuthorizationAction;
         getAuthorizationContext(): IAuthorizationContext;
     }

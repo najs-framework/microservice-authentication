@@ -1,8 +1,7 @@
 /// <reference path="../authorization/IAuthorizationAttributes.ts" />
 
 namespace Microservice.Foundation {
-  export interface IQuery<T extends IAuthorizationResource = IAuthorizationResource>
-    extends IAuthorizationAttributes<T> {
+  export interface IQuery extends IAuthorizationAttributes {
     hasPagination(): boolean
 
     getPaginationLimit(): number

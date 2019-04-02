@@ -1,6 +1,5 @@
 namespace Microservice.Foundation {
-  export interface IQueryBuilder<Query extends IQuery, T extends IAuthorizationResource = IAuthorizationResource>
-    extends ICommandQueryBuilder<Query, T> {
+  export interface IQueryBuilder<Query extends IQuery> extends ICommandQueryBuilder<Query> {
     setPaginationLimit(limit: number): this
 
     setPaginationOffset(limit: number): this

@@ -1,4 +1,4 @@
 declare namespace Microservice.Foundation {
-    interface ICommandBuilder<Command extends ICommand, T extends IAuthorizationResource = IAuthorizationResource> extends ICommandQueryBuilder<Command, T> {
+    interface ICommandBuilder<Command extends ICommand> extends ICommandQueryBuilder<Command> {
     }
 }
