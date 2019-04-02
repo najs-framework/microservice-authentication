@@ -2,3 +2,4 @@
 /// <reference path="api/user/IGetUsersQueryBuilder.d.ts" />
 /// <reference path="api/user/IUserCommandProcessor.d.ts" />
 /// <reference path="api/user/IUserQueryProcessor.d.ts" />
+/// <reference path="spi/services/IAuthorizationService.d.ts" />
